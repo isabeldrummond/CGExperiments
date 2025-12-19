@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }).addTo(map);
 
   // Fetch cities.json and add markers
-  fetch('./cities.json')
+  fetch('data/cities.json')
     .then(r => r.json())
     .then(data => {
       data.forEach(item => {

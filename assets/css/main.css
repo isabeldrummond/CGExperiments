@@ -511,11 +511,21 @@ input, select, textarea {
 				padding: 0 0 0 0rem;
 			}
 
-			.row.gtr-0.gtr-uniform {
-				margin-top: 0rem;
-			}
-
-				.row.gtr-0.gtr-uniform > * {
+/* Active state for view buttons */
+.button.active, .button[aria-pressed="true"] {
+	background-color: #47D3E5; /* matches hover accent */
+	color: #ffffff !important;
+	text-decoration: none;
+}
++
++/* Province select styling */
++#province-select {
++    border: 1px solid rgba(0,0,0,0.15);
++    background: #fff;
++    color: #000;
++    border-radius: 4px;
++}
++.chart-wrapper { max-width: 64rem; margin: 0 auto 1rem; }
 					padding-top: 0rem;
 				}
 

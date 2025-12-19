@@ -83,9 +83,10 @@
 					<div class="inner">
 						<h3><b>See the data</b></h3>
 						<ul class="actions fit">
-							<li><a href="#national_view" class="button fit">National view</a></li>
-							<li>[ Provincial view ]</li>
-							<li>[ Municipal view ]</li>
+							<li><a id="btn-national" href="#national_view" class="button fit" role="button" aria-pressed="false">National view</a></li>
+							<li><a id="btn-provincial" href="#provincial_view" class="button fit" role="button" aria-pressed="false">Provincial view</a></li>
+							<li><a id="btn-municipal" href="#municipal_view" class="button fit" role="button" aria-pressed="false">Municipal view</a></li>
+
 						</ul>
 					</div>
 				</section>
@@ -104,7 +105,7 @@
 								<div class="content">
 									<div>
 										<div class="chart-wrapper">
-											<canvas id="leverschart"></canvas>
+											<canvas id="nationalleverschart"></canvas>
 										</div>
 									</div>
 								</div>
@@ -129,6 +130,24 @@
 					</div> 
 				</section> 
 
+				<!-- PROVINCIAL VIEW -->
+				<section class="wrapper style1 align-center" id="provincial_view">
+					<div class="inner">
+						<div class="index align-left">
+
+						</div> 
+					</div> 
+				</section> 
+
+				<!-- MUNICIPAL VIEW -->
+				<section class="wrapper style1 align-center" id="municipal_view">
+					<div class="inner">
+						<div class="index align-left">
+						</div> 
+					</div> 
+				</section> 
+
+
 				<!-- Footer -->
 				<footer class="wrapper style1 align-center">
 					<div class="inner">
@@ -137,15 +156,72 @@
 				</footer>
 
 			</div> 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+		<!-- Scripts -->				<script>
+				// View toggler: show only the selected section, set active state, support hash-deep-linking
+				(function(){
+					var views = ['national_view','provincial_view','municipal_view'];
+					var mapping = { national_view: 'btn-national', provincial_view: 'btn-provincial', municipal_view: 'btn-municipal' };
+					function showView(id, updateHash){
+						views.forEach(function(v){
+							var el = document.getElementById(v);
+							if(!el) return;
+							el.style.display = (v === id) ? '' : 'none';
+						});
+						setActive(id);
+						if(updateHash !== false){
+							if(history && history.replaceState) history.replaceState(null, null, '#'+id);
+							else location.hash = '#'+id;
+						}
+					}
+					function setActive(id){
+						Object.keys(mapping).forEach(function(k){
+							var btn = document.getElementById(mapping[k]);
+							if(!btn) return;
+							if(k === id){
+								btn.classList.add('active');
+								btn.setAttribute('aria-pressed','true');
+								btn.setAttribute('aria-current','true');
+							} else {
+								btn.classList.remove('active');
+								btn.setAttribute('aria-pressed','false');
+								btn.removeAttribute('aria-current');
+							}
+						});
+					}
+					document.addEventListener('DOMContentLoaded', function(){
+						// Remove previous listeners (if any) by cloning anchor nodes
+						Object.keys(mapping).forEach(function(k){
+							var id = mapping[k];
+							var b = document.getElementById(id);
+							if(!b) return;
+							var nb = b.cloneNode(true);
+							b.parentNode.replaceChild(nb, b);
+						});
+						var btnN = document.getElementById('btn-national');
+						var btnP = document.getElementById('btn-provincial');
+						var btnM = document.getElementById('btn-municipal');
+						if(btnN) btnN.addEventListener('click', function(e){ e.preventDefault(); showView('national_view'); scrollToView('national_view'); });
+						if(btnP) btnP.addEventListener('click', function(e){ e.preventDefault(); showView('provincial_view'); scrollToView('provincial_view'); });
+						if(btnM) btnM.addEventListener('click', function(e){ e.preventDefault(); showView('municipal_view'); scrollToView('municipal_view'); });
+						// initial view from hash or default to national
+						var initial = (location.hash && location.hash.replace('#','')) || 'national_view';
+						if(views.indexOf(initial) === -1) initial = 'national_view';
+						showView(initial, false);
+					});
+					function scrollToView(id){
+						var el = document.getElementById(id);
+						if(!el) return;
+						el.scrollIntoView({behavior:'smooth', block:'start'});
+					}
+				})();
+				</script>			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="./chartjsscript.js"></script>
+
 			<!-- Leaflet JS and map initializer -->
 			<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 			<script src="assets/js/map.js"></script>
