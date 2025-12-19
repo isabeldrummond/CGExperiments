@@ -47,8 +47,8 @@ def csv_to_json(csv_file_path, json_file_path):
 #       Good luck with Chart.js documentation and stack overflow :)
 
 if __name__ == "__main__":
-    csv_input = "/Users/isabeldrummond/CGExperiments/data/cities.csv"
-    json_output = "cities.json"
+    csv_input = "/Users/isabeldrummond/CGExperiments/data/actions_mod.csv"
+    json_output = "actions_mod.json"
     csv_to_json(csv_input, json_output)
 
 # Run the script! You're done! :)

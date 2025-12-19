@@ -3,7 +3,7 @@
    showing proportions (%) of "levers" in data/actions.json.
 */
 (function(){
-    const DATA_FILE = './data/actions.json';
+    const DATA_FILE = './data/actions_mod.json';
     let actions = [];
     let leverKey = null;
     let provinceKey = null;
