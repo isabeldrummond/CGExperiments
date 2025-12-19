@@ -171,12 +171,14 @@
 								<label for="city-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">City</label>
 								<select id="city-select-mun" class="fit" style="max-width:22rem; padding:0.5rem;"></select>
 							</div>
+						
+						<!-- Municipal CAP table: appears only when a province is selected -->
+						<div id="municipal-cap-table-container" style="margin-bottom:1rem;">
+							<div id="municipal-cap-table" style="display:none;"></div>
 						</div>
-
+						</div>
+						
 						<!-- Municipal stacked levers chart (city, province, national) -->
-						<!-- Show placeholder until a city & province are chosen -->
-						<div id="municipal-placeholder" class="geo-placeholder">Select your geography</div>
-
 						<div id="municipal-content" style="display:none;">
 							<header>
 								<h3>Levers — City, Province, National</h3>
@@ -215,7 +217,8 @@
 			<!-- View toggler moved to external file -->
 			<script src="assets/js/view-toggler.js"></script>
 			<script src="assets/js/cities-dropdowns.js"></script>
-			<script src="assets/js/visual_stackedleverchart.js"></script>
+			<script src="assets/js/visual_captable.js"></script>
+            <script src="assets/js/visual_stackedleverchart.js"></script>
 
 	</body>
 
