@@ -134,6 +134,13 @@
 			<section class="wrapper style1 align-center" id="provincial_view" style="display:none;">
 					<div class="inner">
 						<div class="index align-left">
+						<!-- Province selector (populated from data/cities.json) -->
+						<div style="margin-bottom:1rem;">
+							<label for="province-select-prov" style="font-weight:600; display:block; margin-bottom:0.25rem;">Select a province:</label>
+							<select id="province-select-prov" class="fit" style="max-width:18rem; padding:0.5rem;">
+								<option value="">Loading…</option>
+							</select>
+						</div>
 						</div> 
 					</div> 
 				</section> 
@@ -142,7 +149,18 @@
 			<section class="wrapper style1 align-center" id="municipal_view" style="display:none;">
 					<div class="inner">
 						<div class="index align-left">
-						</div> 
+						<!-- Province + City selectors (cities.json) -->
+						<div style="margin-bottom:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
+							<div>
+								<label for="province-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">Province</label>
+								<select id="province-select-mun" class="fit" style="max-width:18rem; padding:0.5rem;"></select>
+							</div>
+							<div>
+								<label for="city-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">City</label>
+								<select id="city-select-mun" class="fit" style="max-width:22rem; padding:0.5rem;"></select>
+							</div>
+						</div>
+					</div> 
 					</div> 
 				</section> 
 
@@ -170,6 +188,7 @@
 
 			<!-- View toggler moved to external file -->
 			<script src="assets/js/view-toggler.js"></script>
+			<script src="assets/js/cities-dropdowns.js"></script>
 
 	</body>
 

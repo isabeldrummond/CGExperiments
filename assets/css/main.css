@@ -517,15 +517,14 @@ input, select, textarea {
 	color: #ffffff !important;
 	text-decoration: none;
 }
-+
-+/* Province select styling */
-+#province-select {
-+    border: 1px solid rgba(0,0,0,0.15);
-+    background: #fff;
-+    color: #000;
-+    border-radius: 4px;
-+}
-+.chart-wrapper { max-width: 64rem; margin: 0 auto 1rem; }
+/* Province select styling */
+#province-select, #province-select-prov, #province-select-mun, #city-select-mun {
+    border: 1px solid rgba(0,0,0,0.15);
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+}
+.chart-wrapper { max-width: 64rem; margin: 0 auto 1rem; }
 					padding-top: 0rem;
 				}
 
