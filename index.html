@@ -97,10 +97,8 @@
 						<div class="index align-left">
 							<section> <!-- levers test -->
 								<header>
-									<h3>bar chart! this is a test!</h3>
-									<p style="font-size:90%">Ok so I know that I can render charts now. Cool! <br>
-										Still working on security fixes (hackers getting to the raw data), and making it dynamically linked. That will require a lot more javascript, but I'm getting a hang of the libraries now.
-									</p>
+									<h3>Levers by province (National)</h3>
+									<p style="font-size:90%">This stacked bar shows the proportion (%) of levers across provinces.</p>
 								</header>
 								<div class="content">
 									<div>
@@ -141,6 +139,20 @@
 								<option value="">Loading…</option>
 							</select>
 						</div>
+
+						<!-- Provincial stacked levers chart (selected province vs national) -->
+						<!-- Show placeholder until a province is chosen -->
+						<div id="provincial-placeholder" class="geo-placeholder">Select your geography</div>
+
+						<div id="provincial-content" style="display:none;">
+							<header>
+								<h3>Levers — Selected province vs National</h3>
+								<p style="font-size:90%">This stacked bar shows the proportion (%) of levers across from the selected province to the national sample.</p>
+							</header>
+							<div class="chart-wrapper" style="margin-top:1rem;">
+								<canvas id="provincialleverschart"></canvas>
+							</div>
+						</div>
 						</div> 
 					</div> 
 				</section> 
@@ -158,6 +170,20 @@
 							<div>
 								<label for="city-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">City</label>
 								<select id="city-select-mun" class="fit" style="max-width:22rem; padding:0.5rem;"></select>
+							</div>
+						</div>
+
+						<!-- Municipal stacked levers chart (city, province, national) -->
+						<!-- Show placeholder until a city & province are chosen -->
+						<div id="municipal-placeholder" class="geo-placeholder">Select your geography</div>
+
+						<div id="municipal-content" style="display:none;">
+							<header>
+								<h3>Levers — City, Province, National</h3>
+								<p style="font-size:90%">This stacked bar shows the proportion (%) of levers across from the selected municipality to its province to the national sample.</p>
+							</header>
+							<div class="chart-wrapper" style="margin-top:1rem;">
+								<canvas id="municipalleverschart"></canvas>
 							</div>
 						</div>
 					</div> 
@@ -189,6 +215,7 @@
 			<!-- View toggler moved to external file -->
 			<script src="assets/js/view-toggler.js"></script>
 			<script src="assets/js/cities-dropdowns.js"></script>
+			<script src="assets/js/visual_stackedleverchart.js"></script>
 
 	</body>
 

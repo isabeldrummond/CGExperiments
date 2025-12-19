@@ -519,14 +519,44 @@ input, select, textarea {
 }
 /* Province select styling */
 #province-select, #province-select-prov, #province-select-mun, #city-select-mun {
-    border: 1px solid rgba(0,0,0,0.15);
-    background: #fff;
-    color: #000;
-    border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.15);
+	background: #fff;
+	color: #000;
+	border-radius: 4px;
 }
-.chart-wrapper { max-width: 64rem; margin: 0 auto 1rem; }
-					padding-top: 0rem;
-				}
+.chart-wrapper { max-width: 90rem; margin: 0 auto 2rem; padding-top: 0rem; }
+
+/* Force canvases to take a taller responsive height */
+.chart-wrapper canvas { width: 100% !important; height: 420px !important; display: block; }
+
+@media (min-width: 1200px) {
+	.chart-wrapper canvas { height: 520px !important; }
+}
+
+@media (max-width: 600px) {
+	.chart-wrapper canvas { height: 320px !important; }
+}
+
+
+/* Placeholder shown until a geography is selected */
+.geo-placeholder {
+	text-align: center;
+	font-weight: 600;
+	color: #666;
+	padding: 1.25rem 0;
+}
+
+/* Reduce vertical spacing specifically around the view selector and initial content */
+#tableofcontents > .inner {
+    padding-top: 1rem;    /* reduce top padding for the TOC */
+    padding-bottom: 0.75rem; /* bring content that follows closer */
+}
+
+/* Make provincial and municipal sections sit closer to the TOC/dropdowns */
+#provincial_view > .inner,
+#municipal_view > .inner {
+    padding-top: 0.75rem;
+}
 
 		.row.gtr-25 {
 			margin-top: 0;
