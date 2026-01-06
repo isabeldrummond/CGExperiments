@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (lat && lon) {
           const marker = L.marker([lat, lon]).addTo(map);
-          const popupHtml = `<strong>${name || 'Unknown'}</strong>, 
+          const popupHtml = `<strong>${name || 'Unknown'}</strong> 
             <br/>${province}<br/>
             Population: ${pop || 'n/a'} <br/>
             Year of plan: ${planyear || 'n/a'} <br/>
