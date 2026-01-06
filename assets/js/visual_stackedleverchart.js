@@ -237,7 +237,7 @@
 
     // Simple color palette
     function paletteColor(i){
-        const base = [ '#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f','#edc949','#af7aa1','#ff9da7','#9c755f','#bab0ac' ];
+        const base = [ '#76A5AF','#D0E2F3','#4286F5','#A4C2F4','#86BCDB','#93A4C9'];
         return base[i % base.length];
     }
 

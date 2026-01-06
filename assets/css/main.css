@@ -513,7 +513,7 @@ input, select, textarea {
 
 /* Active state for view buttons */
 .button.active, .button[aria-pressed="true"] {
-	background-color: #47D3E5; /* matches hover accent */
+	background-color: #4286f5; /* matches hover accent */
 	color: #ffffff !important;
 	text-decoration: none;
 }
