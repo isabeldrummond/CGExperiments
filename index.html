@@ -17,7 +17,6 @@
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
-
 				<!-- Opener -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
@@ -57,49 +56,56 @@
 						<div class="inner">
 							<div class="index align-left">
 								<section>
-									<div class="content">
-										<dl>
-											<h3><b>About the dataset</b></h3>
-										</dl>
-										<p>
+                                    <header>
+                                        <h3><b>About the dataset</b></h3>
+                                        <dl>
 											This database is informed by 104 Canadian municipal climate action plans (CAP), representing 104 communities across 12 provinces and territories. It provides an overview of Canadian municipalities that have published plans to reduce emissions in their buildings sector. The 1283 actions we pulled from these CAPs have been sorted according to the type of policy lever (tool) the municipalities are using (from the <a href="https://carbonneutralcities.org/wp-content/uploads/2018/04/CNCA-Framework-for-Long-Term-Deep-Carbon-Reduction-Planning.pdf">Carbon Neutral Cities Alliance Framework for Long-Term Deep Carbon Reduction Planning</a>). For more on how this database was created, visit our <a href="https://docs.google.com/document/d/1dNXJCvOAljt-3pHLP22qzz_cqaTY4xfqq6hh2-ZFuTc/edit?tab=t.2cb7vnil1mbd">methodology section</a>. 
-										</p>
-										
-										<p>
-											Examples and definitions for each lever are provided here:
-										</p>
-										<table>
-											<tr>
-												<th>Policy Lever</th>
-												<th>Definition</th>
-												<th>Example strategy</th>
-												<th>Example action</th>
-											</tr>
-											<tr>
-												<td>Encouraging voluntary action</td>
-												<td>Providing information, challenges, learning opportunities, technical assistance, examples, and other support can motivate people to try newbehaviors.</td>
-												<td>Encourage Improved Energy Efficiency Performance of Existing Buildings</td>
-												<td>Promote “cool roofs” — coating of rooftops white to reduce building energy use</td>
-											</tr>
-											<tr>
-												<td>Sending price signals</td>
-												<td>Changing the economic impacts — the cost of consumption and otherbehaviors and the return on investments — through subsidies and incentives can motivate new behaviors and investment.</td>
-												<td>Support/Provide Rewards for Performance</td>
-												<td>Provide regulatory and zoning relief for projects meeting certifiable high standards (e.g., LEED)</td>
-											</tr>
-											<tr>
-												<td>Making public investments</td>
-												<td>Investing government funds, short- and long-term, can create conditions that stimulate others to behave in new ways, and also significantly change the government’s own carbon footprint.</td>
-												<td>Model the Behavior- Invest in Energy Retrofitting of Government Buildings</td>
-												<td>Conduct deep retrofitting and/or installation of on-site renewable energy supply</td>
-											</tr>
-											<tr>
-												<td>Mandating change</td>
-												<td>Requiring behavior and enforcing the requirements can result in widespread compliance.</td>
-												<td>Mandate No- to Low Carbon Standards for New Construction</td>
-												<td>Adopt/phase-in building and energy conservation codes based on carbon neutral, zero net energy, Passive House, Living Buildings, and other cost-effective high-efficiency approaches</td>
-											</tr>
-										</table>
+										</dl>
+                                    </header>
+                                    <div class="content">
+                                        <div>
+                                            <div id="map"></div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                  
+									<div class="content">
+                                        <p>
+                                            Examples and definitions for each lever are provided here:
+                                        </p>
+                                        <table>
+                                            <tr>
+                                                <th>Policy Lever</th>
+                                                <th>Definition</th>
+                                                <th>Example strategy</th>
+                                                <th>Example action</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Encouraging voluntary action</td>
+                                                <td>Providing information, challenges, learning opportunities, technical assistance, examples, and other support can motivate people to try newbehaviors.</td>
+                                                <td>Encourage Improved Energy Efficiency Performance of Existing Buildings</td>
+                                                <td>Promote “cool roofs” — coating of rooftops white to reduce building energy use</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sending price signals</td>
+                                                <td>Changing the economic impacts — the cost of consumption and otherbehaviors and the return on investments — through subsidies and incentives can motivate new behaviors and investment.</td>
+                                                <td>Support/Provide Rewards for Performance</td>
+                                                <td>Provide regulatory and zoning relief for projects meeting certifiable high standards (e.g., LEED)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Making public investments</td>
+                                                <td>Investing government funds, short- and long-term, can create conditions that stimulate others to behave in new ways, and also significantly change the government’s own carbon footprint.</td>
+                                                <td>Model the Behavior- Invest in Energy Retrofitting of Government Buildings</td>
+                                                <td>Conduct deep retrofitting and/or installation of on-site renewable energy supply</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mandating change</td>
+                                                <td>Requiring behavior and enforcing the requirements can result in widespread compliance.</td>
+                                                <td>Mandate No- to Low Carbon Standards for New Construction</td>
+                                                <td>Adopt/phase-in building and energy conservation codes based on carbon neutral, zero net energy, Passive House, Living Buildings, and other cost-effective high-efficiency approaches</td>
+                                            </tr>
+                                        </table>
 									</div>
 								</section>
 							</div>
@@ -136,22 +142,6 @@
 									</div>
 								</div>
 							</section>
-							<section> <!-- map test -->
-								<header>
-									<h3>map!</h3>
-									<p style="font-size:90%;">
-										is there where it should be? or should it go further up towards the top? Should it have this margin for info? <br> <br> 
-										do we want any more info on the tooltips? <br> <br>
-										are the map boundaries looking okay? I was playing around with it for awhile. <br> <br>
-										also, I can easily change the marker icons, I just need a transparent png file. </style>
-									</p>
-								</header>
-								<div class="content">
-									<div>
-										<div id="map"></div>
-									</div>
-								</div>
-							</section>
 						</div> 
 					</div> 
 				</section> 
@@ -169,8 +159,6 @@
 						</div>
 
 						<!-- Provincial stacked levers chart (selected province vs national) -->
-						<!-- Show placeholder until a province is chosen -->
-						<div id="provincial-placeholder" class="geo-placeholder">Select your geography</div>
 
 						<div id="provincial-content" style="display:none;">
 							<header>
@@ -227,7 +215,7 @@
 						<div class=" index align-left">
 							<section>
 								<div class="content">
-									<h3>Authorship and acknowledgements</h3>
+									<h3><b>Authorship and acknowledgements</b></h3>
 									<p>
 										How to cite this dataset: <br>
 										[Sort out authors and author order]. (2026). [Title]. Concordia University. [link]
@@ -235,10 +223,11 @@
 									<p>
 										The authors would like to thank the CGLL Action Committee 1 for their role in helping design the data collection process and database; Dr. Jennifer Garard, Dr. Renato Chaves, Dr. Ayse Turak, Dr. Ursula Eicker, and Nasim Fani. We would also like to thank our partners at Future Earth, Nilufar Sabet-Kassouf and Rachelle Fox. Finally, we would like to acknowledge our funder, Volt-Age, which is supported by a $123 million grant from the Canada First Research Excellence Fund.
 									</p>
+									<img src="images/Partner logos.png" class="partner-logos">
 								</div>
 							</section>
 						<!-- this is where funders pics are going to be-->
-
+							
 						</div>
 					</div>
 				</footer>

@@ -8653,3 +8653,11 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+/* Partner logos styling in footer */
+.partner-logos {
+	max-width: 100%;  /* Ensures it never exceeds the parent container's width */
+	height: auto;     /* Maintains aspect ratio when scaling */
+	display: block;   /* Removes inline spacing issues */
+	margin: 1rem auto; /* Centers horizontally and adds some vertical spacing */
+}
