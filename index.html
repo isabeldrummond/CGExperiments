@@ -23,7 +23,7 @@
 						<div class="content">
 							<h2>Canadian Municipal Climate Action Inventory (Buildings sector)</h2>
 							<p class="major">
-								Explore our database of building sector municipal climate actions across Canada to gain a better understanding of how municipalities are changing the built environment to reach net-zero.
+								Explore our database of municipal climate actions in the buildings sector across Canada to gain a better understanding of how municipalities are changing their built environment to reach net-zero.
 							</p>
 							<ul class="actions stacked">
 								<li><a href="#background" class="button big wide smooth-scroll-middle">Get Started</a></li>
@@ -45,8 +45,9 @@
 											<h3> <b>About the CGLL</b></h3>
 										</dl>
 										<p>
-											...
+											The Carbon Governance Living Lab (CGLL) is a project based at Concordia University. It aims to investigate local decarbonization initiatives through the lens of carbon governance experiments, interventions designed to address climate change and decarbonization in municipalities, with the intention to innovate and learn from best practices. Despite the implementation of many of these experiments across Canada, there is a lack of systematic research on how different governance strategies facilitate transitions to net-zero communities, which we aim to fill through this open-access database for researchers, municipalities, and policy-makers. For more information on the CGLL, visit our <a href="https://www.concordia.ca/research/volt-age/initiatives/towards-a-carbon-governance-living-lab.html" >website</a>. 
 										</p>
+
 									</div>
 								</section>
 							</div>
@@ -59,22 +60,47 @@
 								<section>
 									<div class="content">
 										<dl>
-											<h3><b>More about the data</b></h3>
+											<h3><b>About the dataset</b></h3>
 										</dl>
-										<h3>Data collection</h3>
-										<p>[text goes here]</p>
+										<p>
+											This database is informed by 104 Canadian municipal climate action plans (CAP), representing 104 communities across 12 provinces and territories. It provides an overview of Canadian municipalities that have published plans to reduce emissions in their buildings sector. The 1283 actions we pulled from these CAPs have been sorted according to the type of policy lever (tool) the municipalities are using (from the <a href="https://carbonneutralcities.org/wp-content/uploads/2018/04/CNCA-Framework-for-Long-Term-Deep-Carbon-Reduction-Planning.pdf">Carbon Neutral Cities Alliance Framework for Long-Term Deep Carbon Reduction Planning</a>). For more on how this database was created, visit our <a href="https://docs.google.com/document/d/1dNXJCvOAljt-3pHLP22qzz_cqaTY4xfqq6hh2-ZFuTc/edit?tab=t.2cb7vnil1mbd">methodology section</a>. 
+										</p>
+										
+										<p>
+											Examples and definitions for each lever are provided here:
+										</p>
 										<table>
 											<tr>
-												<th>Inclusion</th>
-												<th>Exclusion</th>
+												<th>Policy Lever</th>
+												<th>Definition</th>
+												<th>Example strategy</th>
+												<th>Example action</th>
 											</tr>
 											<tr>
-												<td>[text goes here]</td>
-												<td>[text goes here]</td>
+												<td>Encouraging voluntary action</td>
+												<td>Providing information, challenges, learning opportunities, technical assistance, examples, and other support can motivate people to try newbehaviors.</td>
+												<td>Encourage Improved Energy Efficiency Performance of Existing Buildings</td>
+												<td>Promote “cool roofs” — coating of rooftops white to reduce building energy use</td>
+											</tr>
+											<tr>
+												<td>Sending price signals</td>
+												<td>Changing the economic impacts — the cost of consumption and otherbehaviors and the return on investments — through subsidies and incentives can motivate new behaviors and investment.</td>
+												<td>Support/Provide Rewards for Performance</td>
+												<td>Provide regulatory and zoning relief for projects meeting certifiable high standards (e.g., LEED)</td>
+											</tr>
+											<tr>
+												<td>Making public investments</td>
+												<td>Investing government funds, short- and long-term, can create conditions that stimulate others to behave in new ways, and also significantly change the government’s own carbon footprint.</td>
+												<td>Model the Behavior- Invest in Energy Retrofitting of Government Buildings</td>
+												<td>Conduct deep retrofitting and/or installation of on-site renewable energy supply</td>
+											</tr>
+											<tr>
+												<td>Mandating change</td>
+												<td>Requiring behavior and enforcing the requirements can result in widespread compliance.</td>
+												<td>Mandate No- to Low Carbon Standards for New Construction</td>
+												<td>Adopt/phase-in building and energy conservation codes based on carbon neutral, zero net energy, Passive House, Living Buildings, and other cost-effective high-efficiency approaches</td>
 											</tr>
 										</table>
-										<h3>Data analysis</h3>
-										<p>[text goes here]</p>
 									</div>
 								</section>
 							</div>
@@ -222,6 +248,13 @@
 			<script src="assets/js/cities-dropdowns.js"></script>
 			<script src="assets/js/visual_captable.js"></script>
             <script src="assets/js/visual_stackedleverchart.js"></script>
+
+			<!-- Content file -->
+			<script src="assets/js/content.js"></script>
+			<script>
+				  document.getElementById('abouttheCGLL').textContent = content.abouttheCGLL;
+			</script>
+
 
 	</body>
 
