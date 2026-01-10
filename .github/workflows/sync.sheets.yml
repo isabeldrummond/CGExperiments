@@ -1,0 +1,41 @@
+name: Sync Google Sheets (Manual)
+
+on:
+  workflow_dispatch:   # manual button only
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Actions sheet
+        run: |
+          curl -f -s "https://script.google.com/macros/s/AKfycbyMt6mx-txafe7ZsIXCBs1omcFFNE_7X_HqSwLNT1KEy5yo0yJO-pmZD_VboRAgfkFN/exec" \
+          | jq '.data' > data/actions.json
+
+      - name: Fetch Cities sheet
+        run: |
+          curl -f -s "https://script.google.com/macros/s/AKfycbxPsrugCMqZJOTjd2oOO3H6FNi_xKvNSkruwRfjoO51dhdTFTxzXJp0KF9OEvcMuEoK/exec" \
+          | jq '.data' > data/cities.json
+
+      - name: Validate JSON files
+        run: |
+          jq empty data/actions.json
+          jq empty data/cities.json
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/actions.json data/cities.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Manual sync: update sheet data"
+            git push
+          fi
