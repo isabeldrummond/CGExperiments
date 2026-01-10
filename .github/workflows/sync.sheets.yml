@@ -1,7 +1,7 @@
 name: Sync Google Sheets (Manual)
 
 on:
-  workflow_dispatch:   # manual button only
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -13,25 +13,28 @@ jobs:
 
       - name: Fetch Actions sheet
         run: |
-          curl -f -s "https://script.google.com/macros/s/AKfycbyMt6mx-txafe7ZsIXCBs1omcFFNE_7X_HqSwLNT1KEy5yo0yJO-pmZD_VboRAgfkFN/exec" \
+          curl -f -s "https://script.google.com/macros/s/DEPLOY_ID_ACTIONS/exec" \
           | jq '.data' > data/actions.json
+
+      - name: Fetch Actions Mod sheet
+        run: |
+          curl -f -s "https://script.google.com/macros/s/DEPLOY_ID_ACTIONS_MOD/exec" \
+          | jq '.data' > data/actions_mod.json
 
       - name: Fetch Cities sheet
         run: |
-          curl -f -s "https://script.google.com/macros/s/AKfycbxPsrugCMqZJOTjd2oOO3H6FNi_xKvNSkruwRfjoO51dhdTFTxzXJp0KF9OEvcMuEoK/exec" \
+          curl -f -s "https://script.google.com/macros/s/DEPLOY_ID_CITIES/exec" \
           | jq '.data' > data/cities.json
 
       - name: Validate JSON files
         run: |
           jq empty data/actions.json
+          jq empty data/actions_mod.json
           jq empty data/cities.json
 
       - name: Commit changes (if any)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add data/actions.json data/cities.json
+          git add data/actions.json data/actions_mod.json data/cities.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
