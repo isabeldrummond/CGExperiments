@@ -121,7 +121,7 @@
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { position: 'bottom' } },
+                plugins: { legend: { position: 'right' } },
                 scales: {
                     x: { stacked: true },
                     y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 }
@@ -150,7 +150,7 @@
             data: { labels: labels, datasets: datasets },
             options: {
                 responsive: true,
-                plugins: { legend: { position: 'bottom' } },
+                plugins: { legend: { position: 'right' } },
                 scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 } }
             }
         };
@@ -178,7 +178,7 @@
             data: { labels: labels, datasets: datasets },
             options: {
                 responsive: true,
-                plugins: { legend: { position: 'bottom' } },
+                plugins: { legend: { position: 'right' } },
                 scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 } }
             }
         };
