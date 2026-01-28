@@ -137,72 +137,109 @@
 									</div>
 								</div>
 							</section>
-						</div> 
-					</div> 
-				</section> 
+				</div> 
+			</div> 
+		</section> 
 
-			<!-- PROVINCIAL VIEW (hidden by default) -->
-			<section class="wrapper style1 align-center" id="provincial_view" style="display:none;">
-					<div class="inner">
-						<div class="index align-left">
-						<!-- Province selector (populated from data/cities.json) -->
-						<div style="margin-bottom:1rem;">
-							<label for="province-select-prov" style="font-weight:600; display:block; margin-bottom:0.25rem;">Select a province:</label>
-							<select id="province-select-prov" class="fit" style="max-width:18rem; padding:0.5rem;">
-								<option value="">Loading…</option>
-							</select>
+		<!-- PROVINCIAL VIEW (hidden by default) -->
+		<section class="wrapper style1 align-center" id="provincial_view" style="display:none;">
+				<div class="inner">
+					<div class="index align-left">
+					<!-- Province selector (populated from data/cities.json) -->
+					<div style="margin-bottom:1rem;">
+						<label for="province-select-prov" style="font-weight:600; display:block; margin-bottom:0.25rem;">Select a province:</label>
+						<select id="province-select-prov" class="fit" style="max-width:18rem; padding:0.5rem;">
+							<option value="">Loading…</option>
+						</select>
+					</div>
+
+					<!-- Provincial stacked levers chart placeholder -->
+					<div id="provincial-placeholder">
+						<p style="color:#999;">Select a province to view the distribution of levers.</p>
+					</div>
+
+					<!-- Provincial stacked levers chart (selected province vs national) -->
+					<div id="provincial-content" style="display:none;">
+						<header>
+							<h3>Policy levers — Selected province vs National</h3>
+							<p style="font-size:90%">This stacked bar chart shows the proportional (%) use of each policy lever in the selected province, as well as the overall use of each lever nationally for comparison.</p>
+						</header>
+						<div class="chart-wrapper" style="margin-top:1rem;">
+							<canvas id="provincialleverschart"></canvas>
 						</div>
-
-						<!-- Provincial stacked levers chart (selected province vs national) -->
-
-						<div id="provincial-content" style="display:none;">
-							<header>
-								<h3>Policy levers — Selected province vs National</h3>
-								<p style="font-size:90%">This stacked bar chart shows the proportional (%) use of each policy lever in the selected province, as well as the overall use of each lever nationally for comparison.</p>
-							</header>
-							<div class="chart-wrapper" style="margin-top:1rem;">
-								<canvas id="provincialleverschart"></canvas>
-							</div>
-						</div>
-						</div> 
+					</div>
 					</div> 
-				</section> 
+				</div> 
+			</section> 
 
-			<!-- MUNICIPAL VIEW (hidden by default) -->
-			<section class="wrapper style1 align-center" id="municipal_view" style="display:none;">
-					<div class="inner">
-						<div class="index align-left">
-						<!-- Province + City selectors (cities.json) -->
-						<div style="margin-bottom:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
-							<div>
-								<label for="province-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">Province</label>
-								<select id="province-select-mun" class="fit" style="max-width:18rem; padding:0.5rem;"></select>
-							</div>
-							<div>
-								<label for="city-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">City</label>
-								<select id="city-select-mun" class="fit" style="max-width:22rem; padding:0.5rem;"></select>
-							</div>
+		<!-- MUNICIPAL VIEW (hidden by default) -->
+		<section class="wrapper style1 align-center" id="municipal_view" style="display:none;">
+				<div class="inner">
+					<div class="index align-left">
 						
-						<!-- Municipal CAP table: appears only when a province is selected -->
+					<!-- Province + City selectors (cities.json) -->
+					<div style="margin-bottom:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
+						<div>
+							<label for="province-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">Province</label>
+							<select id="province-select-mun" class="fit" style="max-width:18rem; padding:0.5rem;"></select>
+						</div>
+						<div>
+							<label for="city-select-mun" style="font-weight:600; display:block; margin-bottom:0.25rem;">City</label>
+							<select id="city-select-mun" class="fit" style="max-width:22rem; padding:0.5rem;"></select>
+						</div>
+					
+					<!-- Municipal CAP table: appears only when a province is selected -->
 						<div id="municipal-cap-table-container" style="margin-bottom:1rem;">
 							<div id="municipal-cap-table" style="display:none;"></div>
 						</div>
+					</div>
+					
+					<!-- Municipal stacked levers chart (city, province, national) -->
+					<div id="municipal-content" style="display:none;">
+						<header>
+							<h3>Policy levers — City, Province, National</h3>
+							<p style="font-size:90%">This stacked bar chart shows the proportional (%) use of each policy lever in the selected municipality as well as the overall use of each lever provincially and nationally for comparison.</p>
+						</header>
+						<div class="chart-wrapper" style="margin-top:1rem;">
+							<canvas id="municipalleverschart"></canvas>
 						</div>
-						
-						<!-- Municipal stacked levers chart (city, province, national) -->
-						<div id="municipal-content" style="display:none;">
-							<header>
-								<h3>Policy levers — City, Province, National</h3>
-								<p style="font-size:90%">This stacked bar chart shows the proportional (%) use of each policy lever in the selected municipality as well as the overall use of each lever provincially and nationally for comparison.</p>
-							</header>
-							<div class="chart-wrapper" style="margin-top:1rem;">
-								<canvas id="municipalleverschart"></canvas>
-							</div>
-						</div>
-					</div> 
-					</div> 
-				</section> 
+					</div>
+				</div> 
+				</div> 
+			</section> 
 
+		<!-- STRATEGY VIEW BY LEVER -->
+		<section class="wrapper style1 align-center" id="strategy_view" style="display:none;">
+				<div class="inner">
+					<div class="index align-left">
+
+					<!-- Lever selector for strategies -->
+					<div style="margin-bottom:1rem;">
+						<label for="lever-select-strategy" style="font-weight:600; display:block; margin-bottom:0.25rem;">Select a lever:</label>
+						<select id="lever-select-strategy" class="fit" style="max-width:18rem; padding:0.5rem;">
+							<option value="">Loading…</option>
+						</select>
+					</div>
+
+					<!-- Strategy charts placeholder -->
+					<div id="strategy-placeholder">
+						<p style="color:#999;">Select a lever to view the distribution of strategies.</p>
+					</div>
+
+					<!-- Single strategy chart display -->
+					<div id="strategy-content" style="display:none;">
+						<header>
+							<h3 id="strategy-chart-title">Strategies</h3>
+							<p id="strategy-chart-desc" style="font-size:90%"></p>
+						</header>
+
+						<div class="chart-wrapper" style="margin-top:1rem;">
+							<canvas id="strategychart"></canvas>
+						</div>
+					</div>
+					</div> 
+				</div> 
+		</section>
 
 				<!-- Footer -->
 				<footer class="wrapper style1 align-center" id="acknowledgements">
@@ -244,5 +281,6 @@
 			<script src="assets/js/cities-dropdowns.js"></script>
 			<script src="assets/js/visual_captable.js"></script>
             <script src="assets/js/visual_stackedleverchart.js"></script>
+            <script src="assets/js/visual_stackedstrategychart.js"></script>
 	</body>
 </html>

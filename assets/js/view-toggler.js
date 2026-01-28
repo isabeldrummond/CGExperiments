@@ -1,6 +1,6 @@
 // View toggler: show only the selected section, extracted from inline script
 (function(){
-	var views = ['national_view','provincial_view','municipal_view'];
+	var views = ['national_view','provincial_view','municipal_view','strategy_view'];
 	var mapping = { national_view: 'btn-national', provincial_view: 'btn-provincial', municipal_view: 'btn-municipal' };
 	function setActive(id){
 		Object.keys(mapping).forEach(function(k){
@@ -24,7 +24,16 @@
 			if(!el) return;
 			el.style.display = (v === id) ? '' : 'none';
 		});
+		// Also show strategy_view when showing any data view
+		var strategyView = document.getElementById('strategy_view');
+		if(strategyView){
+			strategyView.style.display = (views.indexOf(id) !== -1) ? '' : 'none';
+		}
 		setActive(id);
+		// Update strategy chart display when view changes
+		if(window.updateStrategyChartDisplay) {
+			window.updateStrategyChartDisplay();
+		}
 		if(updateHash !== false){
 			if(history && history.replaceState) history.replaceState(null, null, '#'+id);
 			else location.hash = '#'+id;
