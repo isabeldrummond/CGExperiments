@@ -94,8 +94,9 @@
     function splitValues(val){
         if(!val && val !== 0) return [];
         if(Array.isArray(val)) return val.map(String);
-        return String(val).split(/[;,]/).map(s => s.trim()).filter(Boolean);
+        return String(val).split(';').map(s => s.trim()).filter(Boolean);
     }
+
 
     function allStrategies(items){
         const s = new Set();
