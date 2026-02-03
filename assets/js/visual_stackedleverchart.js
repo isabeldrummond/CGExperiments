@@ -14,6 +14,55 @@
     let provincialChart = null;
     let municipalChart = null;
 
+
+    // HTML legend plugin (shared by all charts)
+    const htmlLegendPlugin = {
+        id: 'htmlLegend',
+        afterUpdate(chart, args, options) {
+            const containerID = options.containerID;
+            if (!containerID) return;
+
+            const legendContainer = document.getElementById(containerID);
+            if (!legendContainer) return;
+
+            legendContainer.innerHTML = '';
+
+            const items =
+                chart.options.plugins.legend.labels.generateLabels(chart);
+
+            items.forEach(item => {
+                const li = document.createElement('li');
+                li.style.cursor = 'pointer';
+                li.style.display = 'flex';
+                li.style.alignItems = 'center';
+                li.style.marginBottom = '6px';
+
+                li.onclick = () => {
+                    chart.setDatasetVisibility(
+                        item.datasetIndex,
+                        !chart.isDatasetVisible(item.datasetIndex)
+                    );
+                    chart.update();
+                };
+
+                const box = document.createElement('span');
+                box.style.backgroundColor = item.fillStyle;
+                box.style.width = '12px';
+                box.style.height = '12px';
+                box.style.marginRight = '8px';
+                box.style.display = 'inline-block';
+
+                const text = document.createElement('span');
+                text.textContent = item.text;
+                if (item.hidden) text.style.textDecoration = 'line-through';
+
+                li.appendChild(box);
+                li.appendChild(text);
+                legendContainer.appendChild(li);
+            });
+        }
+    };
+
     // Init
     function init(){
         fetch(DATA_FILE).then(r => r.json()).then(d => {
@@ -122,7 +171,7 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: { 
-                    legend: { position: 'right' },
+                    legend: { display: true },
                     tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
                 },
                 scales: {
@@ -154,7 +203,7 @@
             options: {
                 responsive: true,
                 plugins: { 
-                    legend: { position: 'right' },
+                    legend: { display: true },
                     tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
                 },
                 scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 } }
@@ -185,7 +234,7 @@
             options: {
                 responsive: true,
                 plugins: { 
-                    legend: { position: 'right' },
+                    legend: { display: true },
                     tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
                 },
                 scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 } }
