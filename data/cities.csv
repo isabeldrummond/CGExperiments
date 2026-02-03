@@ -1,105 +1,105 @@
-﻿Municipality (n=104),Province,Latitude,Longitude,Year,Population,Part of NZAP (Y/N),Part of GCoM with a Mitigation Plan (Y/N),Part of PPC (Y/N)
-Ville de Montréal,Québec,45.5018869,-73.5673919,2020,1750000,YES,YES,YES
-Saint John,New Brunswick,45.2733153,-66.0633081,2019,67575,YES,YES,YES
-St. John's,Newfoundland and Labrador,47.5556097,-52.7452511,2019,114000,NO,YES,YES
-City of West Hants,Nova Scotia,44.9403847,-64.1252333,2021,187000,YES,NO,NO
-Dufferin,Ontario,44.0527524,-80.1875065,2023,61735,YES,NO,YES
-Orillia,Ontario,44.6082465,-79.4196783,2022,33000,YES,NO,YES
-Okotoks,Alberta,50.7255163,-113.9749127,2018,32000,YES,NO,YES
-Stratford,Prince Edward Island,46.2168746,-63.0881529,2017,32000,YES,NO,YES
-Squamish,British Columbia,49.7016339,-123.1558121,2020,20000,YES,NO,YES
-Saint-Laurent,Québec,45.5022961,-73.706066,,1750000,NO,NO,YES
-MRC Vaudreuil Soulanges,Québec,45.3810072,-74.0153391,2020,158000,NO,NO,YES
-Aurora,Ontario,44.00648,-79.450396,2021,61000,NO,NO,NO
-Port Moody,British Columbia,49.2849107,-122.8677562,2020,35000,NO,NO,YES
-Town of Paradise,Newfoundland and Labrador,47.5235239,-52.8693287,2020,27000,NO,NO,YES
-Corner Brook,Newfoundland and Labrador,48.9523316,-57.9460401,2019,19806,NO,NO,YES
-Summerland,British Columbia,49.603236,-119.6834179,2020,11615,NO,NO,YES
-Toronto,Ontario,43.653226,-79.3831843,2021,2800000,YES,YES,YES
-Calgary,Alberta,51.0447331,-114.0718831,2022,1267344,YES,YES,YES
-Mississauga,Ontario,43.5852972,-79.6449838,2019,721000,YES,YES,YES
-Thunder Bay,Ontario,48.3808951,-89.2476823,2020,108000,YES,YES,YES
-Halifax,Nova Scotia,44.8857087,-63.1005273,2020,448544,NO,YES,YES
-London,Ontario,42.9849233,-81.2452768,2022,404000,YES,YES,YES
-Kingston,Ontario,44.2334401,-76.4930295,2021,136000,YES,YES,YES
-District of Saanich,British Columbia,48.4527784,-123.3754551,2020,119000,NO,YES,YES
-Burlington,Ontario,43.3255196,-79.7990319,2020,730000,NO,YES,YES
-Surrey,British Columbia,49.1913466,-122.8490125,2023,617800,NO,YES,YES
-Oakville,Ontario,43.4507462,-79.7288743,2021,211000,NO,YES,YES
-Guelph,Ontario,43.5448048,-80.2481666,2023,141000,NO,YES,YES
-District of North Vancouver,British Columbia,49.3371057,-123.038208,2017,85000,NO,YES,YES
-Caledon,Ontario,43.8701204,-79.8670882,2021,80000,NO,YES,YES
-Hamilton,Ontario,43.2557206,-79.8711024,2022,540000,YES,NO,YES
-Fredericton,New Brunswick,45.9635895,-66.6431151,2022,62789,YES,NO,YES
-Nelson,British Columbia,49.4928119,-117.2948343,2020,10572,YES,NO,YES
-Metro Vancouver,British Columbia,49.3224696,-122.8568391,2019,2800000,NO,NO,YES
-Vancouver,British Columbia,49.2827291,-123.1207375,2018,631486,NO,NO,YES
-City of Prince George,British Columbia,53.9128548,-122.7452951,2020,74003,NO,NO,YES
-City of Markham,Ontario,43.8599076,-79.3349945,2011,384000,YES,NO,YES
-Waterloo Region,Ontario,43.4757989,-80.543845,,120000,YES,NO,NO
-Delta,British Columbia,49.0952155,-123.0264759,2013,106238,YES,NO,YES
-Peterborough,Ontario,44.3047061,-78.3199606,2016,83000,YES,NO,YES
-Brandon,Manitoba,49.8437486,-99.9514807,2023,48859,YES,NO,YES
-Township of Selwyn,Ontario,44.4062479,-78.3378513,2016,17060,YES,NO,YES
-Whistler,British Columbia,50.1161686,-122.9535117,2020,11854,YES,NO,YES
-City of Regina,Saskatchewan,50.4452112,-104.6188944,2022,236000,NO,NO,YES
-Richmond Hill,Ontario,43.8688079,-79.4137153,2021,209000,NO,NO,YES
-City of Richmond,British Columbia,49.1665898,-123.133569,2014,198309,NO,NO,YES
-Township of Langley,British Columbia,49.0743297,-122.5593213,,158000,NO,NO,YES
-Cambridge,Ontario,43.3616211,-80.3144276,2020,141000,NO,NO,YES
-Coquitlam,British Columbia,49.2837626,-122.7932065,2022,139284,NO,NO,YES
-New Westminster,British Columbia,49.2057179,-122.910956,2022,82000,NO,NO,YES
-City of Sault Ste. Marie,Ontario,46.5136494,-84.3357526,2020,73000,NO,NO,YES
-Comox Valley,British Columbia,49.7064188,-125.021945,2015,66527,NO,NO,YES
-Spruce Grove,Alberta,53.5412414,-113.9100733,2022,39292,NO,NO,YES
-Whitehorse,Yukon,60.7197137,-135.0522761,,25000,NO,NO,YES
-Township of Uxbridge,Ontario,44.1086732,-79.1232225,2023,23000,NO,NO,YES
-Yellowknife,Northwest Territories,62.4539717,-114.3717886,2015,20801,NO,NO,YES
-Durham Region,Ontario,43.9368383,-78.9288242,2018,136000,YES,NO,NO
-Ottawa,Ontario,45.4200572,-75.7003397,2020,1067310,YES,YES,NO
-Saskatoon,Saskatchewan,52.157902,-106.6701577,2019,288311,YES,YES,NO
-Corporation of the City of Windsor,Ontario,42.3182429,-83.0104136,2017,229600,YES,YES,NO
-Victoria,British Columbia,48.4284207,-123.3656444,2018,91867,YES,YES,NO
-Edmonton,Alberta,53.5461663,-113.4937355,2021,1010899,NO,YES,NO
-Brampton,Ontario,43.7315479,-79.7624177,2020,656480,NO,YES,NO
-Laval,Québec,45.6066487,-73.712409,2023,445000,YES,YES,NO
-Nanaimo,British Columbia,49.1658836,-123.9400647,2023,90000,YES,YES,NO
-Candiac,Québec,45.3806689,-73.5077689,2022,23000,YES,YES,NO
-Winnipeg,Manitoba,49.8954221,-97.1385145,2018,749607,YES,NO,NO
-Kelowna,British Columbia,49.8863235,-119.4965917,2018,145000,YES,NO,NO
-Vernon,British Columbia,50.2670137,-119.2720107,2021,44519,NO,NO,NO
-York Region,Ontario,43.9884612,-79.4703885,2002,1239500,YES,NO,NO
-Ville de Québec,Québec,46.8130816,-71.2074596,2021,542000,YES,NO,NO
-Ville de Gatineau,Québec,45.4765446,-75.7012723,2021,291000,YES,NO,NO
-Region of Peel,Ontario,43.6766398,-79.7848422,2020,250000,YES,NO,NO
-Mont-Saint-Hilaire,Québec,45.5640416,-73.1790126,2023,197000,YES,NO,NO
-Greater Sudbury,Ontario,46.4917317,-80.993029,2021,160000,YES,NO,NO
-City of Brantford,Ontario,43.1394179,-80.263616,2022,100000,YES,NO,NO
-County of Wellington,Ontario,43.7803323,-80.543845,,100000,YES,NO,YES
-Grey County,Ontario,44.4659957,-80.6326916,2022,93830,YES,NO,NO
-MRC Marguerite-DYouville,Québec,52.9399159,-73.5491361,2020,82000,YES,NO,NO
-Ville de Granby,Québec,45.4032289,-72.7340662,2023,70823,YES,NO,NO
-District Municipality of Muskoka,Ontario,45.1090674,-79.5875195,2024,60000,YES,NO,NO
-Cornwall,Ontario,45.0212762,-74.730345,2023,47000,YES,NO,NO
-Timmins,Ontario,48.4758208,-81.3304953,2022,41788,YES,NO,NO
-Municipality of Colchester,Nova Scotia,45.3656008,-63.2756041,2021,37000,YES,NO,NO
-City of Leduc,Alberta,53.2647566,-113.5525216,2020,36060,YES,NO,NO
-Ville de Chambly,Québec,45.4409293,-73.3015764,2022,31450,YES,NO,NO
-Sunshine Coast Regional District,British Columbia,49.7604377,-123.7643986,Under preparation - draft 2024,30000,YES,NO,NO
-King Township,Ontario,43.9927234,-79.6742365,2024,27333,YES,NO,NO
-Municipality of the District of Lunenburg,Nova Scotia,44.4261574,-64.6186263,2022,26000,YES,NO,NO
-Ville de Beloeil,Québec,45.5679246,-73.2039469,2023,25000,YES,NO,NO
-Owen Sound,Ontario,44.5690305,-80.9405602,Under preparation - draft 2023,22000,YES,NO,NO
-Corporation of the City of Cranbrook,British Columbia,49.5129678,-115.7694002,2021,20499,YES,NO,NO
-Quispamsis,New Brunswick,45.4321713,-65.9462583,2018,19000,YES,NO,NO
-Esquimalt,British Columbia,48.435842,-123.411234,2022,18000,YES,NO,NO
-Loyalist,Ontario,44.2770379,-76.7182925,2021,17943,YES,NO,NO
-MRC de la Côte-de-Gaspé,Québec,48.805466,-64.4888323,2020,17429,YES,NO,NO
-District of Sooke,British Columbia,48.3773004,-123.7236293,2022,15084,YES,NO,NO
-Sidney,British Columbia,48.6502411,-123.399005,2022,12318,YES,NO,NO
-Tay Valley Township,Ontario,44.8853517,-76.3124898,2020,10000,YES,NO,NO
-Canmore,Alberta,51.0883666,-115.3479101,2018,13992,NO,YES,NO
-Whitby,Ontario,43.8997643,-78.9400809,2023,135566,NO,YES,NO
-Halton Hills,Ontario,43.6502725,-79.9036321,2021,131400,NO,YES,NO
-Kamloops,British Columbia,50.674522,-120.3272674,2021,97902,NO,NO,NO
-Victoriaville,Québec,46.0556724,-71.9589559,2023,"46,322",YES,NO,YES
+﻿Municipality (n=104),Province,Latitude,Longitude,Year,Population,Part of NZAP (Y/N),Part of GCoM with a Mitigation Plan (Y/N),Part of PPC (Y/N),CAP Filename
+Aurora,Ontario,44.00648,-79.450396,2021,61000,NO,NO,NO,Ontario_Aurora
+Brampton,Ontario,43.7315479,-79.7624177,2020,656480,NO,YES,NO,Ontario_Brampton
+Brandon,Manitoba,49.8437486,-99.9514807,2023,48859,YES,NO,YES,Manitoba_Brandon
+Burlington,Ontario,43.3255196,-79.7990319,2020,730000,NO,YES,YES,Ontario_Burlington
+Caledon,Ontario,43.8701204,-79.8670882,2021,80000,NO,YES,YES,Ontario_Caledon
+Calgary,Alberta,51.0447331,-114.0718831,2022,1267344,YES,YES,YES,Alberta_Calgary
+Cambridge,Ontario,43.3616211,-80.3144276,2020,141000,NO,NO,YES,Ontario_Cambridge
+Candiac,Québec,45.3806689,-73.5077689,2022,23000,YES,YES,NO,Quebec_Candiac
+Canmore,Alberta,51.0883666,-115.3479101,2018,13992,NO,YES,NO,Alberta_Canmore
+City of Brantford,Ontario,43.1394179,-80.263616,2022,100000,YES,NO,NO,Ontario_City of Brantford
+City of Leduc,Alberta,53.2647566,-113.5525216,2020,36060,YES,NO,NO,Alberta_City of Leduc
+City of Markham,Ontario,43.8599076,-79.3349945,2011,384000,YES,NO,YES,Ontario_City of Markham
+City of Prince George,British Columbia,53.9128548,-122.7452951,2020,74003,NO,NO,YES,British Columbia_City of Prince George
+City of Regina,Saskatchewan,50.4452112,-104.6188944,2022,236000,NO,NO,YES,Saskatchewan_City of Regina
+City of Richmond,British Columbia,49.1665898,-123.133569,2014,198309,NO,NO,YES,British Columbia_City of Richmond
+City of Sault Ste. Marie,Ontario,46.5136494,-84.3357526,2020,73000,NO,NO,YES,Ontario_City of Sault Ste. Marie
+City of West Hants,Nova Scotia,44.9403847,-64.1252333,2021,187000,YES,NO,NO,Nova Scotia_City of West Hants
+Comox Valley,British Columbia,49.7064188,-125.021945,2015,66527,NO,NO,YES,British Columbia_Comox Valley
+Coquitlam,British Columbia,49.2837626,-122.7932065,2022,139284,NO,NO,YES,British Columbia_Coquitlam
+Corner Brook,Newfoundland and Labrador,48.9523316,-57.9460401,2019,19806,NO,NO,YES,Newfoundland and Labrador_Corner Brook
+Cornwall,Ontario,45.0212762,-74.730345,2023,47000,YES,NO,NO,Ontario_Cornwall
+Corporation of the City of Cranbrook,British Columbia,49.5129678,-115.7694002,2021,20499,YES,NO,NO,British Columbia_Corporation of the City of Cranbrook
+Corporation of the City of Windsor,Ontario,42.3182429,-83.0104136,2017,229600,YES,YES,NO,Ontario_Corporation of the City of Windsor
+County of Wellington,Ontario,43.7803323,-80.543845,,100000,YES,NO,YES,Ontario_County of Wellington
+Delta,British Columbia,49.0952155,-123.0264759,2013,106238,YES,NO,YES,British Columbia_Delta
+District Municipality of Muskoka,Ontario,45.1090674,-79.5875195,2024,60000,YES,NO,NO,Ontario_District Municipality of Muskoka
+District of North Vancouver,British Columbia,49.3371057,-123.038208,2017,85000,NO,YES,YES,British Columbia_District of North Vancouver
+District of Saanich,British Columbia,48.4527784,-123.3754551,2020,119000,NO,YES,YES,British Columbia_District of Saanich
+District of Sooke,British Columbia,48.3773004,-123.7236293,2022,15084,YES,NO,NO,British Columbia_District of Sooke
+Dufferin,Ontario,44.0527524,-80.1875065,2023,61735,YES,NO,YES,Ontario_Dufferin
+Durham Region,Ontario,43.9368383,-78.9288242,2018,136000,YES,NO,NO,Ontario_Durham Region
+Edmonton,Alberta,53.5461663,-113.4937355,2021,1010899,NO,YES,NO,Alberta_Edmonton
+Esquimalt,British Columbia,48.435842,-123.411234,2022,18000,YES,NO,NO,British Columbia_Esquimalt
+Fredericton,New Brunswick,45.9635895,-66.6431151,2022,62789,YES,NO,YES,New Brunswick_Fredericton
+Greater Sudbury,Ontario,46.4917317,-80.993029,2021,160000,YES,NO,NO,Ontario_Greater Sudbury
+Grey County,Ontario,44.4659957,-80.6326916,2022,93830,YES,NO,NO,Ontario_Grey County
+Guelph,Ontario,43.5448048,-80.2481666,2023,141000,NO,YES,YES,Ontario_Guelph
+Halifax,Nova Scotia,44.8857087,-63.1005273,2020,448544,NO,YES,YES,Nova Scotia_Halifax
+Halton Hills,Ontario,43.6502725,-79.9036321,2021,131400,NO,YES,NO,Ontario_Halton Hills
+Hamilton,Ontario,43.2557206,-79.8711024,2022,540000,YES,NO,YES,Ontario_Hamilton
+Kamloops,British Columbia,50.674522,-120.3272674,2021,97902,NO,NO,NO,British Columbia_Kamloops
+Kelowna,British Columbia,49.8863235,-119.4965917,2018,145000,YES,NO,NO,British Columbia_Kelowna
+King Township,Ontario,43.9927234,-79.6742365,2024,27333,YES,NO,NO,Ontario_King Township
+Kingston,Ontario,44.2334401,-76.4930295,2021,136000,YES,YES,YES,Ontario_Kingston
+Laval,Québec,45.6066487,-73.712409,2023,445000,YES,YES,NO,Quebec_Laval
+London,Ontario,42.9849233,-81.2452768,2022,404000,YES,YES,YES,Ontario_London
+Loyalist,Ontario,44.2770379,-76.7182925,2021,17943,YES,NO,NO,Ontario_Loyalist
+Metro Vancouver,British Columbia,49.3224696,-122.8568391,2019,2800000,NO,NO,YES,British Columbia_Metro Vancouver
+Mississauga,Ontario,43.5852972,-79.6449838,2019,721000,YES,YES,YES,Ontario_Mississauga
+Mont-Saint-Hilaire,Québec,45.5640416,-73.1790126,2023,197000,YES,NO,NO,Quebec_Mont-Saint-Hilaire
+MRC de la Côte-de-Gaspé,Québec,48.805466,-64.4888323,2020,17429,YES,NO,NO,Quebec_MRC de la Côte-de-Gaspé
+MRC Marguerite-DYouville,Québec,52.9399159,-73.5491361,2020,82000,YES,NO,NO,Quebec_MRC Marguerite-D'Youville
+MRC Vaudreuil Soulanges,Québec,45.3810072,-74.0153391,2020,158000,NO,NO,YES,Quebec_MRC Vaudreuil Soulanges
+Municipality of Colchester,Nova Scotia,45.3656008,-63.2756041,2021,37000,YES,NO,NO,Nova Scotia_Municipality of Colchester
+Municipality of the District of Lunenburg,Nova Scotia,44.4261574,-64.6186263,2022,26000,YES,NO,NO,Nova Scotia_Municipality of the District of Lunenburg
+Nanaimo,British Columbia,49.1658836,-123.9400647,2023,90000,YES,YES,NO,British Columbia_Nanaimo
+Nelson,British Columbia,49.4928119,-117.2948343,2020,10572,YES,NO,YES,British Columbia_Nelson
+New Westminster,British Columbia,49.2057179,-122.910956,2022,82000,NO,NO,YES,British Columbia_New Westminster
+Oakville,Ontario,43.4507462,-79.7288743,2021,211000,NO,YES,YES,Ontario_Oakville
+Okotoks,Alberta,50.7255163,-113.9749127,2018,32000,YES,NO,YES,Alberta_Okotoks
+Orillia,Ontario,44.6082465,-79.4196783,2022,33000,YES,NO,YES,Ontario_Orillia
+Ottawa,Ontario,45.4200572,-75.7003397,2020,1067310,YES,YES,NO,Ontario_Ottawa
+Owen Sound,Ontario,44.5690305,-80.9405602,Under preparation - draft 2023,22000,YES,NO,NO,Ontario_Owen Sound
+Peterborough,Ontario,44.3047061,-78.3199606,2016,83000,YES,NO,YES,Ontario_Peterborough
+Port Moody,British Columbia,49.2849107,-122.8677562,2020,35000,NO,NO,YES,British Columbia_Port Moody
+Quispamsis,New Brunswick,45.4321713,-65.9462583,2018,19000,YES,NO,NO,New Brunswick_Quispamsis
+Region of Peel,Ontario,43.6766398,-79.7848422,2020,250000,YES,NO,NO,Ontario_Region of Peel
+Richmond Hill,Ontario,43.8688079,-79.4137153,2021,209000,NO,NO,YES,Ontario_Richmond Hill
+Saint John,New Brunswick,45.2733153,-66.0633081,2019,67575,YES,YES,YES,New Brunswick_Saint John
+Saint-Laurent,Québec,45.5022961,-73.706066,,1750000,NO,NO,YES,Quebec_Saint-Laurent
+Saskatoon,Saskatchewan,52.157902,-106.6701577,2019,288311,YES,YES,NO,Saskatchewan_Saskatoon
+Sidney,British Columbia,48.6502411,-123.399005,2022,12318,YES,NO,NO,British Columbia_Sidney
+Spruce Grove,Alberta,53.5412414,-113.9100733,2022,39292,NO,NO,YES,Alberta_Spruce Grove
+Squamish,British Columbia,49.7016339,-123.1558121,2020,20000,YES,NO,YES,British Columbia_Squamish
+St. John's,Newfoundland and Labrador,47.5556097,-52.7452511,2019,114000,NO,YES,YES,Newfoundland and Labrador_St. John's
+Stratford,Prince Edward Island,46.2168746,-63.0881529,2017,32000,YES,NO,YES,Prince Edward Island_Stratford
+Summerland,British Columbia,49.603236,-119.6834179,2020,11615,NO,NO,YES,British Columbia_Summerland
+Sunshine Coast Regional District,British Columbia,49.7604377,-123.7643986,Under preparation - draft 2024,30000,YES,NO,NO,British Columbia_Sunshine Coast Regional District
+Surrey,British Columbia,49.1913466,-122.8490125,2023,617800,NO,YES,YES,British Columbia_Surrey
+Tay Valley Township,Ontario,44.8853517,-76.3124898,2020,10000,YES,NO,NO,Ontario_Tay Valley Township
+Thunder Bay,Ontario,48.3808951,-89.2476823,2020,108000,YES,YES,YES,Ontario_Thunder Bay
+Timmins,Ontario,48.4758208,-81.3304953,2022,41788,YES,NO,NO,Ontario_Timmins
+Toronto,Ontario,43.653226,-79.3831843,2021,2800000,YES,YES,YES,Ontario_Toronto
+Town of Paradise,Newfoundland and Labrador,47.5235239,-52.8693287,2020,27000,NO,NO,YES,Newfoundland and Labrador_Town of Paradise
+Township of Langley,British Columbia,49.0743297,-122.5593213,,158000,NO,NO,YES,British Columbia_Township of Langley
+Township of Selwyn,Ontario,44.4062479,-78.3378513,2016,17060,YES,NO,YES,Ontario_Township of Selwyn
+Township of Uxbridge,Ontario,44.1086732,-79.1232225,2023,23000,NO,NO,YES,Ontario_Township of Uxbridge
+Vancouver,British Columbia,49.2827291,-123.1207375,2018,631486,NO,NO,YES,British Columbia_Vancouver
+Vernon,British Columbia,50.2670137,-119.2720107,2021,44519,NO,NO,NO,British Columbia_Vernon
+Victoria,British Columbia,48.4284207,-123.3656444,2018,91867,YES,YES,NO,British Columbia_Victoria
+Victoriaville,Québec,46.0556724,-71.9589559,2023,"46,322",YES,NO,YES,Québec_Victoriaville
+Ville de Beloeil,Québec,45.5679246,-73.2039469,2023,25000,YES,NO,NO,Quebec_Ville de Beloeil
+Ville de Chambly,Québec,45.4409293,-73.3015764,2022,31450,YES,NO,NO,Quebec_Ville de Chambly
+Ville de Gatineau,Québec,45.4765446,-75.7012723,2021,291000,YES,NO,NO,Quebec_Ville de Gatineau
+Ville de Granby,Québec,45.4032289,-72.7340662,2023,70823,YES,NO,NO,Quebec_Ville de Granby
+Ville de Montréal,Québec,45.5018869,-73.5673919,2020,1750000,YES,YES,YES,Quebec_Ville de Montréal
+Ville de Québec,Québec,46.8130816,-71.2074596,2021,542000,YES,NO,NO,Quebec_Ville de Québec
+Waterloo Region,Ontario,43.4757989,-80.543845,,120000,YES,NO,NO,Ontario_Waterloo Region
+Whistler,British Columbia,50.1161686,-122.9535117,2020,11854,YES,NO,YES,British Columbia_Whistler
+Whitby,Ontario,43.8997643,-78.9400809,2023,135566,NO,YES,NO,Ontario_Whitby
+Whitehorse,Yukon,60.7197137,-135.0522761,,25000,NO,NO,YES,Yukon_Whitehorse
+Winnipeg,Manitoba,49.8954221,-97.1385145,2018,749607,YES,NO,NO,Manitoba_Winnipeg
+Yellowknife,Northwest Territories,62.4539717,-114.3717886,2015,20801,NO,NO,YES,Northwest Territories_Yellowknife
+York Region,Ontario,43.9884612,-79.4703885,2002,1239500,YES,NO,NO,Ontario_York Region
