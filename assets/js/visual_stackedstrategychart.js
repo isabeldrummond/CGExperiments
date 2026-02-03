@@ -184,62 +184,6 @@
         });
     }
 
-    function renderStrategyChart(lever, dataArray, labels, title, description){
-        const ctx = document.getElementById('strategychart');
-        if(!ctx) return;
-        
-        if(!lever){
-            const placeholder = document.getElementById('strategy-placeholder');
-            const content = document.getElementById('strategy-content');
-            if(placeholder) placeholder.style.display = '';
-            if(content) content.style.display = 'none';
-            return;
-        }
-        
-        const filteredActions = filterByLever(actions, lever);
-        const strategies = allStrategies(filteredActions);
-        
-        const datasets = strategies.map((strategy,idx) => ({
-            label: strategy,
-            data: dataArray.map(row => +(row[strategy]||0).toFixed(2)),
-            backgroundColor: paletteColor(idx)
-        }));
-
-        const cfg = {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: datasets
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: { 
-                    legend: { position: 'right' },
-                    tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
-                },
-                scales: {
-                    x: { stacked: true },
-                    y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 }
-                }
-            }
-        };
-
-        // Update title and description
-        const titleEl = document.getElementById('strategy-chart-title');
-        const descEl = document.getElementById('strategy-chart-desc');
-        if(titleEl) titleEl.textContent = title;
-        if(descEl) descEl.textContent = description;
-
-        // Show content, hide placeholder
-        const placeholder = document.getElementById('strategy-placeholder');
-        const content = document.getElementById('strategy-content');
-        if(placeholder) placeholder.style.display = 'none';
-        if(content) content.style.display = '';
-
-        if(strategyChart) strategyChart.destroy();
-        strategyChart = new Chart(ctx, cfg);
-    }
 
     function setupLeverSelectors(levers){
         const sel = document.getElementById('lever-select-strategy');
@@ -306,7 +250,10 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: { 
-                    legend: { display: true },
+                    legend: { 
+                        display: true,
+                        position: 'bottom'
+                    },
                     tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
                 },
                 scales: {

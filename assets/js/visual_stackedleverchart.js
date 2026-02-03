@@ -171,7 +171,10 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: { 
-                    legend: { display: true },
+                    legend: { 
+                        display: true,
+                        position: 'bottom'
+                    },
                     tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
                 },
                 scales: {
@@ -203,7 +206,10 @@
             options: {
                 responsive: true,
                 plugins: { 
-                    legend: { display: true },
+                    legend: {
+                        display: true,
+                        position: 'bottom'
+                    },
                     tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
                 },
                 scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 } }
@@ -234,7 +240,10 @@
             options: {
                 responsive: true,
                 plugins: { 
-                    legend: { display: true },
+                    legend: {
+                        display: true,
+                        position: 'bottom'
+                    },
                     tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + '%' } }
                 },
                 scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => v + '%' }, max: 100 } }
