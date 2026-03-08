@@ -219,7 +219,7 @@
         }
     }
 
-    function renderStrategyChart(lever, dataArray, labels, title, description){
+    function renderStrategyChart(lever, dataArray, labels, title, description, message){
         const ctx = document.getElementById('strategychart');
         if(!ctx) return;
         
@@ -267,13 +267,16 @@
         const titleEl = document.getElementById('strategy-chart-title');
         const descEl = document.getElementById('strategy-chart-desc');
         if(titleEl) titleEl.textContent = title;
-        if(descEl) descEl.textContent = description;
+        if(descEl) descEl.innerHTML = description + (message ? '<h3><strong><mark>' + message + '</strong></h3></mark>' : '');
 
         // Show content, hide placeholder
         const placeholder = document.getElementById('strategy-placeholder');
         const content = document.getElementById('strategy-content');
         if(placeholder) placeholder.style.display = 'none';
         if(content) content.style.display = '';
+
+        const canvas = document.getElementById('strategychart');
+        if(canvas) canvas.style.display = '';
 
         if(strategyChart) strategyChart.destroy();
         strategyChart = new Chart(ctx, cfg);
@@ -300,7 +303,8 @@
                 perProvincePercent,
                 provinces,
                 'Strategies by Province (National)',
-                'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever across the provinces and territories studied.'
+                'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever across the provinces and territories studied.',
+                null
             );
         }
         else if(provincialView && provincialView.style.display !== 'none'){
@@ -323,12 +327,18 @@
             const provPerc = percentize(provCounts);
             const natPerc = percentize(natCounts);
             
+            let message = null;
+            if(Object.values(provPerc).every(v => v === 0)){
+                message = `${selectedProv} does not use the ${currentLever} policy lever at all, according to our analysis.`;
+            }
+            
             renderStrategyChart(
                 currentLever,
                 [provPerc, natPerc],
                 [selectedProv || 'Selected province', 'Canada'],
                 'Strategies — Selected province vs National',
-                'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever in the selected province, as well as the overall use of each strategy nationally for comparison.'
+                'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever in the selected province, as well as the overall use of each strategy nationally for comparison.',
+                message
             );
         }
         else if(municipalView && municipalView.style.display !== 'none'){
@@ -364,12 +374,18 @@
             const provPerc = percentize(provCounts);
             const natPerc = percentize(natCounts);
             
+            let message = null;
+            if(Object.values(cityPerc).every(v => v === 0)){
+                message = `${selectedCity} does not use ${currentLever} at all`;
+            }
+            
             renderStrategyChart(
                 currentLever,
                 [cityPerc, provPerc, natPerc],
                 [selectedCity || 'Selected city', selectedProv || 'Province', 'Canada'],
                 'Strategies — City, Province, National',
-                'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever in the selected municipality as well as the overall use of each strategy provincially and nationally for comparison.'
+                'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever in the selected municipality as well as the overall use of each strategy provincially and nationally for comparison.',
+                message
             );
         }
     }
