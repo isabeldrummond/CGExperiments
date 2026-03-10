@@ -344,9 +344,9 @@
             const provPerc = percentize(provCounts);
             const natPerc = percentize(natCounts);
             
-            let message = null;
+            let noDataMessage = null;
             if(Object.values(provPerc).every(v => v === 0)){
-                message = `${selectedProv} does not use the ${currentLever} policy lever at all, according to our analysis.`;
+                noDataMessage = `${selectedProv} does not use the ${currentLever} policy lever at all, according to our analysis.`;
             }
             
             renderStrategyChart(
@@ -355,7 +355,7 @@
                 [selectedProv || 'Selected province', 'Canada'],
                 'Strategies — Selected province vs National',
                 'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever in the selected province, as well as the overall use of each strategy nationally for comparison.',
-                message
+                noDataMessage
             );
         }
         else if(municipalView && municipalView.style.display !== 'none'){
@@ -391,9 +391,9 @@
             const provPerc = percentize(provCounts);
             const natPerc = percentize(natCounts);
             
-            let message = null;
+            let noDataMessage = null;
             if(Object.values(cityPerc).every(v => v === 0)){
-                message = `${selectedCity} does not use ${currentLever} at all`;
+                noDataMessage = `${selectedCity} does not use ${currentLever} at all`;
             }
             
             renderStrategyChart(
@@ -402,7 +402,7 @@
                 [selectedCity || 'Selected city', selectedProv || 'Province', 'Canada'],
                 'Strategies — City, Province, National',
                 'This stacked bar chart shows the proportional (%) use of each strategy within the selected policy lever in the selected municipality as well as the overall use of each strategy provincially and nationally for comparison.',
-                message
+                noDataMessage
             );
         }
     }
