@@ -219,7 +219,7 @@
         }
     }
 
-    function renderStrategyChart(lever, dataArray, labels, title, description, message){
+    function renderStrategyChart(lever, dataArray, labels, title, description, noDataMessage){
         const ctx = document.getElementById('strategychart');
         if(!ctx) return;
         
@@ -267,7 +267,7 @@
         const titleEl = document.getElementById('strategy-chart-title');
         const descEl = document.getElementById('strategy-chart-desc');
         if(titleEl) titleEl.textContent = title;
-        if(descEl) descEl.innerHTML = description + (message ? '<h3><strong><mark>' + message + '</strong></h3></mark>' : '');
+        if(descEl) descEl.innerHTML = description;
 
         // Show content, hide placeholder
         const placeholder = document.getElementById('strategy-placeholder');
@@ -276,7 +276,24 @@
         if(content) content.style.display = '';
 
         const canvas = document.getElementById('strategychart');
-        if(canvas) canvas.style.display = '';
+        const messageDiv = document.getElementById('strategy-message');
+        const legend = document.getElementById('chart-legend');
+
+        if(noDataMessage){
+            // Show message instead of chart
+            if(canvas) canvas.style.display = 'none';
+            if(messageDiv){
+                messageDiv.style.display = '';
+                messageDiv.innerHTML = '<p>' + noDataMessage + '</p>';
+            }
+            if(legend) legend.style.display = 'none';
+            return;
+        } else {
+            // Render chart
+            if(canvas) canvas.style.display = '';
+            if(messageDiv) messageDiv.style.display = 'none';
+            if(legend) legend.style.display = '';
+        }
 
         if(strategyChart) strategyChart.destroy();
         strategyChart = new Chart(ctx, cfg);
